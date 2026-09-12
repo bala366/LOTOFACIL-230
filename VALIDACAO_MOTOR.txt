@@ -1,0 +1,35 @@
+VALIDAÇÃO DO MOTOR - V2 FILTRO FIXO + ALTERNATIVO
+==================================================
+
+1) O núcleo do projeto V1 foi preservado:
+   - análise dos 230 grupos de 22;
+   - seleção por maior atraso sem 15;
+   - mapa forte/falha;
+   - geração das 170.544 combinações;
+   - projeção de falha e desempates.
+
+2) Única extensão do núcleo:
+   - FilterConfig permite escolher FILTRO FIXO ou FILTRO ALTERNATIVO.
+
+3) Teste de regressão do FILTRO FIXO:
+   Base determinística: 400 concursos artificiais, seed fixa 20260912.
+
+   V1 e V2 retornaram exatamente:
+   Grupo 22:
+   01 02 03 04 05 06 07 08 09 10 11 12 13 14 17 18 20 21 22 23 24 25
+
+   Total classificados: 208
+
+   Melhor jogo:
+   01 02 04 05 07 11 12 13 17 18 20 21 22 24 25
+
+   failureMean = 60.99120200
+   failureMin  = 45.51368419
+   strength    = 50.47460586
+   stalk       = 48.03512545
+
+   Resultado: IDÊNTICO AO V1.
+
+4) Teste do FILTRO ALTERNATIVO:
+   rep=8 | P/I=8/7 | primos=6 | mágicos=5 | moldura=9 | soma=192..210
+   Motor executou as 170.544 combinações e classificou normalmente.

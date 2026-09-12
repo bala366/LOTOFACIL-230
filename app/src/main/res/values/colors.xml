@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple900">#3A006B</color>
+    <color name="purple800">#4A148C</color>
+    <color name="purple700">#5E1AA8</color>
+    <color name="purple100">#F2E8FA</color>
+    <color name="green_game">#2E7D32</color>
+    <color name="red_fail">#C62828</color>
+</resources>
